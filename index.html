@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Note App</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"  rel="stylesheet">
+
+</head>
+<body>
+   <header>
+    <h1> My Note App</h1>
+   </header> 
+  
+   <main>
+    <nav>
+        <div class="navbox">
+    <label for="title"> Title</label>
+    <input type="text" name="title" id="titleEl" >
+     <label > Content </label>
+     <textarea  id="contentEl"  required></textarea>
+    
+     <div class="btn"><button id="addbtn"> Save Note</button></div>
+        </div>
+    </nav> 
+   
+   </main>
+   <h2 onclick="show()"><i class="fa-solid fa-bars"></i>
+       <span>Open Notes</span>
+   </h2>
+         <div class="sidebar">
+            <div class="close"> &times </div>
+             <h1> Saved Note.</h1>
+             <ol id="savednote"></ol> 
+         </div>
+
+       
+   <script src="index.js"></script>
+</body>
+</html>

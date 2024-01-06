@@ -1,0 +1,199 @@
+  * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+  }
+  body {
+    overflow-y: scroll;
+  }
+
+  header {
+    display: grid;
+    align-items: center;
+     font-size: 12px;
+     font-weight: bold;
+     font-family:cursive;
+     height: 10vh;
+     text-align: center;
+      color:black;
+    
+}
+  .fa-bars {
+    border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  }
+ nav {
+  overflow-y: scroll;
+     position: fixed;
+      top: 50%;
+      left: 5%;
+      height: 80vh;
+      width: 90%;
+      transform: translateY(-50%);
+      box-shadow: 0 0 5px lightgrey;
+      margin-top: 1vh;
+
+ }
+   .navbox {
+   
+       margin: 20px 20px 0 20px;
+
+   }
+     label {
+         font-size: 20px;
+         display: flex;
+         margin:0  5%;
+         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     }
+       input {
+        width:90%;
+        margin: auto 5% ;
+        height: 30px;
+        outline: none;
+        font-size: 25px;
+        margin-bottom: 2%;
+         }
+           textarea {
+            margin: 0 5%;
+           height: 50vh;
+            width: 90%;
+             outline: none;
+             font-size: 23px;
+             overflow-y: scroll;
+             color: black;
+          
+           }
+       .btn {
+         text-align: center;
+         margin: 3% 5px 0 5px;
+       }
+        .btn button {
+             width: 50%;
+             padding: 12px 14px;
+             background-color: rgb(0,0,48);
+             color: white;
+             border: none;
+             font-size: 17px;
+             border-radius: 20px;
+        }
+          .btn button:hover {
+             background-color: black;
+          }
+           h2 {
+         
+            position: fixed;
+            top: 0;
+             right: 0;
+           }
+              span {
+                display: none;
+            position: absolute;
+            width:fit-content;
+            background-color:brown;
+            width: 150px;
+            padding: 5px;
+            text-align: center;
+            color: white;
+            border-radius: 20px;
+            font-size: 14px;
+            font-family: cursive;
+             top: 100%;
+             right: 0;
+             }
+              
+             h2:hover span {
+               display: block;
+             }
+                .close {
+                   position: fixed; 
+                   color: black;
+                   font-size: 35px;
+                   top: 0;
+                   right: 0;
+                }
+                 .close:hover  {
+                   background-color: red;
+                   color: white;
+                   width: 30px;
+                   text-align: center;
+                 }
+             .sidebar {
+              display: none;
+               position: fixed;
+               top: 0;
+               right: 0;
+               z-index: 40;
+               height: 100%;
+               width: 480px;
+               color: black;
+               background-color: white;
+               overflow-y: auto;
+              transition: 0.7s linear;
+             }
+               .sidebar h1 {
+                 text-align: center;
+                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                 font-size: 20px;
+               }
+
+                
+               
+                 .note li {
+                   font-size: 20px;
+                  
+                   padding:  auto  auto;
+                   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+                 }
+                 .note {
+                  padding: 10px 0 10px 30px;
+                
+                 }
+
+                 .notebtn {
+                   display: flex;
+                   justify-content: space-evenly;
+                     margin-top: 10px;
+                 }
+                  .notebtn button {
+                      width:40%;
+                       padding: 5px 10px;
+                       background-color:rgb(236, 56, 18);
+                       color: white;
+                border-radius: 15px;
+                font-size: 17px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  }
+          .notebtn button:hover {
+             background-color: rgb(134,17,19);
+          }
+
+       @media(max-height:570px) {
+        nav {
+           height: 85vh;
+           margin-top: 4vh;
+        }
+       }
+        @media(max-width:520px) {
+           .sidebar {
+            width: 100%;
+           }
+           .btn button {
+            width: fit-content;
+           }
+            input {
+              font-size: 19px;
+            }
+            textarea {
+               font-size: 17px;
+            }
+            .notebtn button  {
+              width: fit-content;
+            }
+        }
+
+        
+        
+         
+        
